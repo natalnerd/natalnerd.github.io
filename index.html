@@ -56,6 +56,8 @@
 							<header>
 								<h1>Comunidades e empresas de tecnologia, unidas em uma campanha de arrecadação de briquedos.</h1>
 								<p>Estamos realizando eventos, em todo Brasil, os conteudos estão excelentes, uma grande oportunidade para você aprender novas tecnologias, se atualizar, fazer networking e ajudar fazendo sua doação de brinquedo.</p>
+								
+								<center><h1><span id="number">94</span>/ 300 arrecadados</h1></center>
 							</header>
 							
 							<h2>Comunidades</h2>
@@ -69,13 +71,45 @@
 							</section>
 							
 							<h2>Agenda & Eventos</h2>
-							<section class="tiles" id="agenda">
-								
+							<section id="agenda">
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Evento</th>
+												<th>Comunidade</th>
+												<th>Data</th>
+											</tr>
+										</thead>
+										<tbody>
+										
+											<tr>
+												<td><a target="_blank" href="https://www.meetup.com/pt-BR/dotnet-Sao-Paulo/events/244713841/">.NET Standard 2.0, APIs em ASP.NET Core 2.0 e Node</a></td>
+												<td>.NET São Paulo</td>
+												<td>27/11/2017</td>
+											</tr>
+											<tr>
+												<td><a target="_blank" href="https://www.meetup.com/pt-BR/Fintech-SP/events/244915034/">Open Banking</a></td>
+												<td>FintechSP</td>
+												<td>28/11/2017</td>
+											</tr>
+											<tr>
+												<td><a target="_blank" href="https://www.meetup.com/pt-BR/Developers-SP/events/244979937/">IT Talks</a></td>
+												<td>Developers São Paulo</td>
+												<td>02/12/2017</td>
+											</tr>
+											<tr>
+												<td><a target="_blank" href="https://www.meetup.com/pt-BR/dotnet-Sao-Paulo/events/245352004/">Community BootCamp</a></td>
+												<td>.NET São Paulo</td>
+												<td>13/12/2017</td>
+											</tr>
+									</table>
+								</div>
 							</section>
 							
 							<h2>Entregas / Festa de Natal</h2>
-							<section class="tiles" id="entrega">
-								
+							<section id="entrega">
+								<h1>Em São Paulo, será de 17/12, estamos organizando em parceria com a <a target="_blank" href="https://www.meetup.com/pt-BR/CriancaSorriso/">Criança Sorriso</a></h1>
 							</section>
 						</div>
 					</div>
@@ -100,6 +134,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="https://inorganik.github.io/countUp.js/countUp.js"></script>
 
 	</body>
 </html>
@@ -146,5 +181,16 @@ for (communityIndex in listCommunities.communities) {
 	
 }
 
-
+var options = {
+	useEasing: true, 
+	useGrouping: true, 
+	separator: '.', 
+	decimal: ',', 
+};
+var demo = new CountUp('number', 0, 94, 0, 10, options);
+if (!demo.error) {
+	demo.start();
+} else {
+	console.error(demo.error);
+}
 </script>
