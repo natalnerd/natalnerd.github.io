@@ -9,6 +9,6 @@ var jsonCommunities = '{"communities":[' +
 			'{"name":"SQL BH", "city":"Belo Horizonte", "link":"https://www.meetup.com/pt-BR/SQL-BH/", "image":"images/"},' +
 			'{"name":"RandomHacks", "city":"Belo Horizonte", "link":"https://www.meetup.com/pt-BR/Random-Hacks", "image":"images/randomhack.png"},' +
 			'{"name":"Unidos Somos Mais", "city":"São Paulo", "link":"https://www.facebook.com/groups/ONGunidos/", "image":"images/unidossomosmais.jpg"},' +
-			'{"name":"Capivara Coders", "city":"Curitiba", "link":"https://www.meetup.com/pt-BR/capivara-coders/", "image":"images/capicoders_logo.jpg"}' +
-			'{"name":"DevOps Professionals", "city":"São Paulo", "link":"https://www.meetup.com/pt-BR/DevOps-Professionals/", "image":"images/devopsprofessionals.jpeg"},' +
+			'{"name":"Capivara Coders", "city":"Curitiba", "link":"https://www.meetup.com/pt-BR/capivara-coders/", "image":"images/capicoders_logo.jpg"},' +
+			'{"name":"DevOps Professionals", "city":"São Paulo", "link":"https://www.meetup.com/pt-BR/DevOps-Professionals/", "image":"images/devopsprofessionals.jpeg"}' +
 			']}';
