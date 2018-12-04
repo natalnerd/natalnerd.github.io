@@ -12,5 +12,6 @@ var jsonCommunities = '{"communities":[' +
 			'{"name":"Capivara Coders", "city":"Curitiba", "link":"https://www.meetup.com/pt-BR/capivara-coders/", "image":"images/capicoders_logo.jpg"},' +
 			'{"name":"DevOps Professionals", "city":"São Paulo", "link":"https://www.meetup.com/pt-BR/DevOps-Professionals/", "image":"images/devopsprofessionals.jpeg"},' +
 			'{"name":"GDG-SP", "city":"São Paulo", "link":"https://www.meetup.com/pt-BR/GDG-SP/", "image":"images/GDG-SP.jpeg"},' +
-			'{"name":"AI Brasil", "city":"São Paulo", "link":"https://aibrasil.eti.br/", "image":"images/aibrasil.png"}' +
+			'{"name":"AI Brasil", "city":"São Paulo", "link":"https://aibrasil.eti.br/", "image":"images/aibrasil.png"},' +
+			'{"name":"CollabCode", "city":"São Paulo", "link":"https://www.facebook.com/collabcode/", "image":"images/Logo-collab-1.png"}' +
 			']}';
