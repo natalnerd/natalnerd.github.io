@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
   }
-  *:before, *:after {
+
+*:before, *:after {
     box-sizing: border-box;
-  }
+}
+
 body{
     overflow-x: hidden;
 }
@@ -23,7 +25,6 @@ body{
     width: 100%;
     position: fixed;
     height: 280px;
-    margin-top: 20px;
 }
 
 .header-paralax h1 {
@@ -38,11 +39,7 @@ body{
 }
 
 .features-img {
-    /* min-height: 14rem; */
-    /* max-width: 100%; */
     width: 100%;
-    /* height: auto; */
-    /* background-size: 100% 100%; */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -134,7 +131,7 @@ ul {
 .contato{
     color: #e15361;
 }
-
+/* 
 .contato:hover{
     color: #e15361;
-}
+} */
