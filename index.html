@@ -13,29 +13,29 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway:900,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<a class="navbar-brand" href="#index">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top pb-0">
+		<a class="navbar-brand toTop" href="#">
 			<img src="./images/cabeca.png" width="30" height="30" alt="logo">
 		</a>
-		<a class="navbar-brand" href="#index">Natal Nerd 2018</a>
+		<a class="navbar-brand toTop" href="#">Natal Nerd 2018</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
 		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#doacoes">Doações</a>
-				<a class="nav-item nav-link" href="#comunidades">Comunidades</a>
-				<a class="nav-item nav-link" href="#empresas">Patrocinadores/Parceiros</a>
-				<a class="nav-item nav-link" href="#agenda">Agenda/Eventos</a>
-				<a class="nav-item nav-link" href="#entrega">Entregas/Festa de Natal</a>
-				<a class="nav-item nav-link" href="#anteriores">Anos Anteriores</a>
-				<a class="nav-item nav-link" href="#contato">Contato</a>
+				<a class="nav-item nav-link scrollSuave" href="#doacoes">Doações</a>
+				<a class="nav-item nav-link scrollSuave" href="#comunidades">Comunidades</a>
+				<a class="nav-item nav-link scrollSuave" href="#empresas">Patrocinadores/Parceiros</a>
+				<a class="nav-item nav-link scrollSuave" href="#agenda">Agenda/Eventos</a>
+				<a class="nav-item nav-link scrollSuave" href="#entrega">Entregas/Festa de Natal</a>
+				<a class="nav-item nav-link scrollSuave" href="#anteriores">Anos Anteriores</a>
+				<a class="nav-item nav-link scrollSuave" href="#contato">Contato</a>
 			</div>
 			<ul class="nav">
 				<li class="nav-item"><a class="social nav-link" title="Facebook" href="https://www.facebook.com/natalnerdbrasil/"
@@ -49,7 +49,7 @@
 	</nav>
 
 	<header class="header-paralax">
-		<div class="row">
+		<div class="row"> 
 			<div class="col-md-3 features-img" style="background-image: url('images/noelNerd.png');"></div>
 			<div class="col-md-6 col-sm-3">
 				<h1 class="">Campanha de arrecadação de brinquedos 2018</h1>
@@ -65,7 +65,7 @@
 			<div class="container-fuid">
 				<div class="row">
 					<div class="col-md-10 offset-md-1 col-sm-3">
-						<h1 class="text-center p-3">Comunidades e empresas de tecnologia, unidas em uma campanha de arrecadação de
+						<h1 class="text-center p-3 mt-5">Comunidades e empresas de tecnologia, unidas em uma campanha de arrecadação de
 							brinquedos.</h1>
 						<p class="text-center lead p-3">Estamos realizando eventos em todo Brasil! Os conteúdos estão excelentes! Uma
 							grande
@@ -146,46 +146,66 @@
 			</div>
 		</section>
 
-		<h2 id="comunidades" class="text-center p-5">Comunidades Participantes</h2>
+		<h2 id="comunidades" class="text-center p-5 mt-5">Comunidades Participantes</h2>
 		<section id="communities" class="communities">
 		</section>
 
-		<h2 id="empresas" class="text-center p-5">Patrocinadores/Parceiros</h2>
-		<div class="container">
-			<div class="row">
-				<div class="card-deck mx-auto">
-					<div class="card shadow">
-						<a href="https://www.facebook.com/azureconference/" target="_blank" class="text-dark lead">
-							<img class="card-img-top" src="images/azure.png" alt="Azure Conference">
-							<div class="card-body text-center">
-								<h4 class="card-title">Azure Conference</h4>
-								<p class="card-text">Patrocinador</p>
-							</div>
-						</a>
-					</div>
-					<div class="card shadow">
-						<a href="https://informatica.sp.senai.br/" target="_blank" class="text-dark lead">
-							<img class="card-img-top" src="images/logo-senai.png" alt="SENAI SP">
-							<div class="card-body text-center">
-								<h4 class="card-title">SENAI SP</h4>
-								<p class="card-text">Parceiro</p>
-							</div>
-						</a>
-					</div>
-					<div class="card shadow">
-						<a href="http://balta.io/" target="_blank" class="text-dark lead">
-							<img class="card-img-top" src="images/baltaio.png" alt="balta.io">
-							<div class="card-body text-center">
-								<h4 class="card-title">balta.io</h4>
-								<p class="card-text">Parceiro</p>
-							</div>
-						</a>
+		<section class="mt-5">
+			<h2 id="empresas" class="text-center p-5">Patrocinadores/Parceiros</h2>
+			<div class="container">
+				<div class="row">
+					<div class="card-deck mx-auto">
+						<div class="card shadow">
+							<a href="https://www.facebook.com/azureconference/" target="_blank" class="text-dark lead">
+								<img class="card-img-top" src="images/azure.png" alt="Azure Conference">
+								<div class="card-body text-center">
+									<h4 class="card-title">Azure Conference</h4>
+									<p class="card-text">Patrocinador</p>
+								</div>
+							</a>
+						</div>
+						<div class="card shadow">
+							<a href="https://impulso.network/" target="_blank" class="text-dark lead">
+								<img class="card-img-top" src="images/impulso.jpeg" alt="Impulso">
+								<div class="card-body text-center">
+									<h4 class="card-title">Impulso Network</h4>
+									<p class="card-text">Patrocinador</p>
+								</div>
+							</a>
+						</div>
+						<div class="card shadow">
+							<a href="https://impulso.network/" target="_blank" class="text-dark lead">
+								<img class="card-img-top" src="images/picpay.jpeg" alt="PicPay">
+								<div class="card-body text-center">
+									<h4 class="card-title">PicPay</h4>
+									<p class="card-text">Patrocinador</p>
+								</div>
+							</a>
+						</div>
+						<div class="card shadow">
+							<a href="https://informatica.sp.senai.br/" target="_blank" class="text-dark lead">
+								<img class="card-img-top" src="images/logo-senai.png" alt="SENAI SP">
+								<div class="card-body text-center">
+									<h4 class="card-title">SENAI SP</h4>
+									<p class="card-text">Parceiro</p>
+								</div>
+							</a>
+						</div>
+						<div class="card shadow">
+							<a href="http://balta.io/" target="_blank" class="text-dark lead">
+								<img class="card-img-top" src="images/baltaio.png" alt="balta.io">
+								<div class="card-body text-center">
+									<h4 class="card-title">balta.io</h4>
+									<p class="card-text">Parceiro</p>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<h2 id="agenda" class="text-center p-5">Agenda/Eventos</h2>
+		<h2 id="agenda" class="text-center p-5 mt-5">Agenda/Eventos</h2>
 		<div class="container">
 			<div class="table-responsive">
 				<table class="table table-hover lead">
@@ -343,7 +363,7 @@
 			</div>
 		</div>
 
-		<h2 id="entrega" class="text-center p-5">Entregas/Festa de Natal</h2>
+		<h2 id="entrega" class="text-center p-5 mt-5">Entregas/Festa de Natal</h2>
 		<div class="container">
 			<div class="card-deck">
 				<div class="card bg-light border-danger shadow">
@@ -361,13 +381,13 @@
 					<div class="card-body text-center lead">
 						<img class="card-img" src="./images/cardsemtexto.png">
 						<!-- <h4 class="text-justify">Em breve mais informações sobre a entrega dos presentes!<h4> -->
-								<!-- <a href="#" target="_blank" class="btn btn-danger mt-5" role="button">Mais informações aqui</a> -->
+						<!-- <a href="#" target="_blank" class="btn btn-danger mt-5" role="button">Mais informações aqui</a> -->
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<h2 id="anteriores" class="text-center p-5">Anos Anteriores</h2>
+		<h2 id="anteriores" class="text-center p-5 mt-5">Anos Anteriores</h2>
 		<h4 class="text-center pb-5">Veja como foi nosso Evento no ano passado!</h4>
 		<div class="container">
 			<div class="col-md-10 offset-md-1 col-sm-3">
@@ -426,7 +446,7 @@
 			</div>
 		</div>
 
-		<h2 id="contato" class="text-center p-5">Contato</h2>
+		<h2 id="contato" class="text-center p-5 mt-5">Contato</h2>
 		<h4 class="text-center pb-5">Entre em contato conosco por e-mail e visite nosso Facebook!</h4>
 		<ul class="nav justify-content-center">
 			<li class="nav-item"><a class="contato nav-link mb-5" title="Facebook" href="https://www.facebook.com/natalnerdbrasil/"
@@ -439,8 +459,9 @@
 
 	</main>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	 crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script> -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
