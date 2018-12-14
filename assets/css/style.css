@@ -1,26 +1,53 @@
+/* Configurações gerais */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-
-*:before, *:after {
-    box-sizing: border-box;
 }
 
 body{
     overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo {
+    text-shadow: 2px 3px 1px rgb(156, 152, 152);
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #dc3545;
+}
+
+.titulo:first-letter{
+    text-decoration: underline  rgb(40,167,69);
+}
+
+/* Navbar */
+
+.navbar{
+    background: rgb(248,249,250); 
+    transition: all 0.5s; 
+}
+
+.navbarChange{
+    background: rgb(252, 142, 153);
+    transition: all 0.5s; 
 }
 
 .social{
-    color: #7c7c96;
+    color: #000;
 }
 
 .social:hover{
-    color: #e15361;
+    color: #dc3545;
 }
+
+/* Header */
+
 .header-paralax{
-    background-image: url('../../images/bgsnow.jpg');
+    background-image: url('../../images/diversos/bgsnow.jpg');
     background-size: cover;
     width: 100%;
     position: fixed;
@@ -31,7 +58,6 @@ body{
     text-align: center;
     color: #fff;
     text-shadow: 2px 3px 1px #000;
-    font-family: 'Raleway', sans-serif;
     font-weight: 900;
     letter-spacing: 20px;
     font-size: 40px;
@@ -48,30 +74,41 @@ body{
     .header-paralax h1 {
         font-size: 20px;
         letter-spacing: 10px
-        /* margin: 0;
-        padding: 0 auto; */
     }
     .features-img{
         display: none;
     }
 }
 
+/* Main */
+
 main{
-    background: #f8f9fa;
+    background: rgb(248, 249, 250);
     position: relative;
     top: 280px;
 }
+
+/* Doações */
 
 #doacoes h1{
     margin-top: 20px;
 }
 
-.contato{
-    color: #dc3545
+.tituloPrincipal {
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 20px;
+    
 }
 
+.progress{
+    font-size: 1rem;
+}
+
+/* Comunidades */
+
 .communities {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -89,14 +126,62 @@ main{
 }
 
 .community img{
-    opacity: 0.2;
     width: 350px;
     height: 300px;
+}
+
+.tituloCommunidade {
+    text-shadow: 2px 3px 1px #000;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 20px;
 }
 
 .texto{
     padding: 25% 0 25% 0;
 }
+
+.imagem {
+    position: relative;
+}
+
+.imagem:hover .capa {
+    background: rgba(220,53,69,0.5);
+    color: #fff;
+}
+
+.community:hover{
+    transform: scale(1.1);
+}
+  
+.capa {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Patrocinadores/Parceiros */
+
+#patrocinadores a{
+    text-decoration: none;
+}
+
+#parceiros a{
+    text-decoration: none;
+}
+
+#patrocinadores img:hover{
+    transform: scale(1.1);
+}
+
+#parceiros img:hover{
+    transform: scale(1.1);
+}
+
+/* Anos Anteriores */
 
 .carousel-indicators {
 	left: 0;
@@ -120,18 +205,49 @@ main{
     color: #dc3545;
 }
 
+/* Eventos/Agenda */
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: rgba(40,167,69,0.4);
+}
+
+.thead{
+    background: #e15361;
+    color: #fff;
+}
+
 td a {
     text-decoration: underline dotted;
 }
 
 ul {
-    list-style-image: url('../../images/presente.png');
+    list-style-image: url('../../images/diversos/presente.png');
 }
+
+/* Contato */
 
 .contato{
     color: #e15361;
 }
-/* 
-.contato:hover{
-    color: #e15361;
-} */
+
+.contato:hover {
+    color: #dc3545;
+}
+
+/* Scroll To Top */
+
+.scrollTop:hover{
+    background: rgba(225,83,97,0.9);
+}
+
+.scrollTop{
+    text-decoration: none;
+    background: rgba(225,83,97,0.2);
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    opacity: 0.8;
+}
